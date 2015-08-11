@@ -1,0 +1,4 @@
+1. User enters a word
+2. User enters a list of words
+3. The single word will be compared with the list of words
+4. The program will compare them and decide if it's an anagram 
