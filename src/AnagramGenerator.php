@@ -2,5 +2,8 @@
 
     class AnagramGenerator
     {
-        function makeAnagram
+        function makeAnagram($input)
+        {
+
+        }
     }
