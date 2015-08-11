@@ -9,7 +9,7 @@
         {
             //Arrange
             $test_AnagramGenerator = new AnagramGenerator;
-            $dict = "beard";
+            $dict = array('bread');
             $input = "bread";
 
             //Act

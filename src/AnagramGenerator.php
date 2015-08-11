@@ -2,23 +2,26 @@
 
     class AnagramGenerator
     {
-        function makeAnagram($input, $dict)
+
+        function makeAnagram($input)
         {
-            $result = false;
-            if ($input && $dict)
-            {
-                $input = strtolower(str_replace(" ","", $input));
-                $dict = strtolower(str_replace(" ","", $dict));
-                $input = str_split($input);
-                $dict = str_split($dict);
-                sort($input);
-                sort($dict);
-                if ($input === $dict) {
-                    $result = true;
+            $input_list_words = array('\n', file_get_contents (https://docs.oracle.com/javase/tutorial/collections/interfaces/examples/dictionary.txt));
+
+            $input = (strtolower($input));
+            $input_array_of_char = explode(" ", $input);
+            $output_anagram = array();
+
+            foreach ($input_array_of_char as $char) {
+                if (in_array($char, $input_list_words)) {
+                    array_push($output_anagram, $char);
+                else
+                    echo "The word you entered has no anagram.";
                 }
             }
-            return $result;
-        }
 
+            $anagram_together = implode(" ", $output_anagram);
+
+        }
     }
+
 ?>
