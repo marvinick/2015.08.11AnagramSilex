@@ -8,14 +8,15 @@
         function test_makeAnagram()
         {
             //Arrange
-            $test_makeAnagram = new AnagramGenerator;
+            $test_AnagramGenerator = new AnagramGenerator;
+            $dict = "beard";
             $input = "bread";
 
             //Act
-            $result = $test_AnagramGenerator->makeAnagram($input);
+            $result = $test_AnagramGenerator->makeAnagram($input, $dict);
 
             //Assert
-            $this->assertEquals("beard", $result);
+            $this->assertEquals($dict, $result);
         }
     }
 
